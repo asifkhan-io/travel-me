@@ -44,17 +44,10 @@ jadoo-nextjs/
 
 ## About the images
 
-The original project's images/icons are still referenced directly from the
-source site (`https://themewagon.github.io/jadoo/v1.0.0/assets/...`), set as
-the `ASSET_BASE` constant in `lib/assets.js`. This was necessary because I
-only had access to the live rendered page, not the original Pug project's
-raw asset files.
-
-**To self-host the images instead:**
-1. Download the `assets/img` folder from the original repo/site
-2. Drop it into `public/img` in this project
-3. In `lib/assets.js`, change `ASSET_BASE` to an empty string `""` and update
-   image paths in components from `${ASSET_BASE}/img/...` to `/img/...`
+The original Jadoo images/icons are included in `public/img` and referenced
+through the local `ASSET_BASE` constant in `lib/assets.js`. Keeping these
+assets in the project avoids broken images when the original demo URL changes
+or is unavailable.
 
 ## Notes on the conversion
 

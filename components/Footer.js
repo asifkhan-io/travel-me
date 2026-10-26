@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { ASSET_BASE } from "@/lib/assets";
 
 const columns = [
   {
@@ -22,7 +21,7 @@ export default function Footer() {
       <div className='container-custom grid sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-12'>
         <div className='lg:col-span-2'>
           <Image
-            src='/images/logo2.svg'
+            src='/img/logo2.svg'
             alt='Jadoo'
             width={120}
             height={34}

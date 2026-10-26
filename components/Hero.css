@@ -10,7 +10,7 @@
   position: absolute;
   inset: 0;
   z-index: 0;
-  background: url("/images/hero-bg.svg") right top / auto 100% no-repeat;
+  background: url("/img/hero/hero-bg.svg") right top / auto 100% no-repeat;
   content: "";
   pointer-events: none;
 }
